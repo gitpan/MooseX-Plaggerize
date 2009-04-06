@@ -1,12 +1,13 @@
-use Moose;
+use strict;
+use warnings;
 use Test::More tests => 2;
 use MooseX::Plaggerize;
 
 my $context = Moose::Meta::Class->create_anon_class(
     roles        => ['MooseX::Plaggerize'],
-)->construct_instance;
+)->new_object;
 
-my $plugin = Moose::Meta::Class->create_anon_class()->construct_instance;
+my $plugin = Moose::Meta::Class->create_anon_class()->new_object;
 
 {
     $context->register_hook(
