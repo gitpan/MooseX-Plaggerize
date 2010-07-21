@@ -3,12 +3,11 @@ abstract: 'plagger like plugin feature for Moose'
 author:
   - 'Tokuhiro Matsuno <tokuhirom@gmail.com>'
 build_requires:
-  Test::More: 0
-  YAML: 0
+  ExtUtils::MakeMaker: 6.42
 configure_requires:
-  ExtUtils::MakeMaker: 6.48
+  ExtUtils::MakeMaker: 6.42
 distribution_type: module
-generated_by: 'Module::Install version 0.81'
+generated_by: 'Module::Install version 1.00'
 license: perl
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
@@ -18,11 +17,11 @@ no_index:
   directory:
     - inc
     - t
+    - xt
 requires:
-  Filter::Util::Call: 0
-  Moose: 0.70
+  Moose: 1.08
   Scalar::Util: 1.19
   perl: 5.8.0
 resources:
   license: http://dev.perl.org/licenses/
-version: 0.05
+version: 0.06
