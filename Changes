@@ -1,5 +1,9 @@
 Revision history for Perl extension MooseX::Plaggerize
 
+0.07
+
+    - modernize Makefile.PL for fixing testing issue.
+
 0.06
 
     - avoid warnings for Moose 1.09
